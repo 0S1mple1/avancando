@@ -7,6 +7,7 @@ import ManageData from "./components/ManageData";
 import ListRender from "./components/ListRender";
 import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
+import CarDetails from "./components/CarDetails";
 
 /* eslint-disable no-unused-vars */
 
@@ -27,7 +28,10 @@ function App() {
       <ManageData />
       <ListRender />
       <ConditionalRender />
+      {/* Props */}
       <ShowUserName name={userName} />
+      {/* Destructuring */}
+      <CarDetails brand="Ford" km={10000} color="Vermelho" />
     </div>
   );
 }

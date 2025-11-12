@@ -8,11 +8,10 @@ import ListRender from "./components/ListRender";
 import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
-
-/* eslint-disable no-unused-vars */
+import Fragment from "./components/Fragment";
 
 function App() {
-  const name = "Joaquim";
+  //const name = "Joaquim";
   const [userName] = useState("Maria");
 
   const cars = [
@@ -51,6 +50,8 @@ function App() {
           newCar={car.newCar}
         />
       ))}
+      {/* Fragment */}
+      <Fragment proFragment="teste" />
     </div>
   );
 }

@@ -9,6 +9,7 @@ import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
 import Fragment from "./components/Fragment";
+import Container from "./components/Container";
 
 function App() {
   //const name = "Joaquim";
@@ -51,7 +52,9 @@ function App() {
         />
       ))}
       {/* Fragment */}
-      <Fragment proFragment="teste" />
+      <Fragment propFragment="teste" />
+      {/* children */}
+      <Container></Container>
     </div>
   );
 }
